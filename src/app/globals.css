@@ -1,0 +1,54 @@
+@import "tailwindcss";
+
+@theme {
+  --font-heading: var(--font-heading);
+  --font-body: var(--font-body);
+
+  --color-primary: #E89B5A;
+  --color-primary-light: #F5C89A;
+  --color-primary-dark: #C07A3A;
+
+  --color-accent: #F97316;
+  --color-accent-dark: #C2410C;
+
+  --color-surface: #0A0A0A;
+  --color-surface-alt: #141414;
+  --color-surface-light: #1F1F1F;
+
+  --color-foreground: #F5F5F5;
+  --color-foreground-muted: #A3A3A3;
+  --color-foreground-dim: #737373;
+
+  --color-border: #262626;
+  --color-border-light: #404040;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: #0A0A0A;
+  color: #F5F5F5;
+}
+
+@layer utilities {
+  .text-balance { text-wrap: balance; }
+  .text-pretty { text-wrap: pretty; }
+  .bg-gradient-hero {
+    background: radial-gradient(ellipse at top, rgba(232, 155, 90, 0.15) 0%, transparent 60%), #0A0A0A;
+  }
+  .bg-gradient-card {
+    background: linear-gradient(135deg, #1F1F1F 0%, #141414 100%);
+  }
+  .border-glow {
+    box-shadow: 0 0 0 1px rgba(232, 155, 90, 0.2), 0 8px 32px rgba(0, 0, 0, 0.4);
+  }
+  .hover-lift {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  .hover-lift:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 20px 40px rgba(232, 155, 90, 0.2);
+  }
+}
