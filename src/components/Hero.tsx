@@ -99,14 +99,6 @@ export default function Hero() {
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/85 via-black/10 to-transparent" />
                 </div>
-                <div className="absolute bottom-0 left-0 right-0 p-4 text-left">
-                  <div className="text-[10px] uppercase tracking-[0.2em] text-[#FF3D3D] font-bold mb-1">DTL Customs · Szombathely</div>
-                  <div className="font-heading font-black text-white text-base leading-tight">Prémium autófóliázás</div>
-                  <div className="mt-2 inline-flex items-center gap-2 text-[11px] text-white/80">
-                    <span className="w-2 h-2 rounded-full bg-[#E10600] animate-pulse" />
-                    Időpontfoglalás folyamatban
-                  </div>
-                </div>
               </div>
               <div className="mt-3 text-center bg-[#E10600] text-white rounded-2xl px-5 py-3 font-bold shadow-xl shadow-[#E10600]/25">
                 <div className="text-[10px] uppercase tracking-widest opacity-90">Garancia</div>
@@ -129,14 +121,6 @@ export default function Hero() {
                 priority
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/85 via-black/10 to-transparent" />
-            </div>
-            <div className="absolute bottom-0 left-0 right-0 p-5">
-              <div className="text-[10px] uppercase tracking-[0.2em] text-[#FF3D3D] font-bold mb-1">DTL Customs · Szombathely</div>
-              <div className="font-heading font-black text-white text-lg leading-tight">Prémium autófóliázás</div>
-              <div className="mt-2 inline-flex items-center gap-2 text-xs text-white/80">
-                <span className="w-2 h-2 rounded-full bg-[#E10600] animate-pulse" />
-                Időpontfoglalás folyamatban
-              </div>
             </div>
           </div>
           <div className="mt-3 text-center bg-[#E10600] text-white rounded-2xl px-5 py-3 font-bold shadow-xl shadow-[#E10600]/25">
