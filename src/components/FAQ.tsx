@@ -42,7 +42,7 @@ export default function FAQ() {
   const [open, setOpen] = useState<number | null>(0);
 
   return (
-    <section id="gyik" className="py-24 sm:py-32 bg-[#0A0A0A]">
+    <section id="gyik" className="py-24 sm:py-32 bg-surface">
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
         <FadeIn>
           <div className="text-center mb-14">
@@ -60,7 +60,7 @@ export default function FAQ() {
             <FadeIn key={i} delay={i * 50}>
               <div
                 className={`bg-gradient-card border rounded-2xl overflow-hidden transition ${
-                  open === i ? "border-[#E10600]/50" : "border-[#262626]"
+                  open === i ? "border-[#E10600]/30" : "border-[#1F1F1F]"
                 }`}
               >
                 <button

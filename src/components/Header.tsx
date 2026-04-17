@@ -26,7 +26,7 @@ export default function Header() {
     <header
       className={`sticky top-0 z-50 transition-all duration-300 ${
         scrolled
-          ? "bg-[#0A0A0A]/95 backdrop-blur-md border-b border-[#262626]"
+          ? "bg-[#0A0A0A]/95 backdrop-blur-md border-b border-[#1F1F1F]"
           : "bg-transparent"
       }`}
     >
@@ -47,7 +47,7 @@ export default function Header() {
               <Link
                 key={l.href}
                 href={l.href}
-                className="text-sm font-medium text-[#D4D4D4] hover:text-[#E10600] transition"
+                className="text-sm font-medium text-[#D4D4D4] hover:text-white transition"
               >
                 {l.label}
               </Link>
@@ -57,7 +57,7 @@ export default function Header() {
           <div className="hidden lg:flex items-center gap-3">
             <a
               href="tel:+36303899625"
-              className="inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-gradient-to-r from-[#E10600] to-[#A30400] text-white font-semibold text-sm hover:shadow-lg hover:shadow-[#E10600]/30 transition"
+              className="inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-gradient-to-r from-[#E10600] to-[#A30400] text-white font-semibold text-sm hover:shadow-lg hover:shadow-[#E10600]/20 transition"
             >
               <Phone className="w-4 h-4" />
               +36 30 389 9625
@@ -75,7 +75,7 @@ export default function Header() {
       </div>
 
       {open && (
-        <div className="lg:hidden border-t border-[#262626] bg-[#0A0A0A]">
+        <div className="lg:hidden border-t border-[#1F1F1F] bg-surface">
           <nav className="px-4 py-4 flex flex-col gap-1">
             {links.map((l) => (
               <Link

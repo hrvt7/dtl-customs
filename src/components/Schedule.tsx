@@ -13,7 +13,7 @@ const schedule = [
 
 export default function Schedule() {
   return (
-    <section id="nyitvatartas" className="py-24 sm:py-32 bg-[#0A0A0A]">
+    <section id="nyitvatartas" className="py-24 sm:py-32 bg-surface">
       <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
         <FadeIn>
           <div className="text-center mb-12">
@@ -30,7 +30,7 @@ export default function Schedule() {
         </FadeIn>
 
         <FadeIn>
-          <div className="bg-gradient-card border border-[#262626] rounded-3xl overflow-hidden">
+          <div className="bg-gradient-card border border-[#1F1F1F] rounded-3xl overflow-hidden">
             <div className="divide-y divide-[#262626]">
               {schedule.map((s) => (
                 <div

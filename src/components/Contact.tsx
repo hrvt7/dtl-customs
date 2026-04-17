@@ -11,7 +11,7 @@ import FadeIn from "./FadeIn";
 
 export default function Contact() {
   return (
-    <section id="kapcsolat" className="py-24 sm:py-32 bg-[#141414] border-y border-[#262626]">
+    <section id="kapcsolat" className="py-24 sm:py-32 bg-surface-alt border-y border-[#1F1F1F]">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <FadeIn>
           <div className="text-center mb-14">
@@ -33,7 +33,7 @@ export default function Contact() {
             <div className="space-y-4">
               <a
                 href="tel:+36303899625"
-                className="flex items-start gap-4 bg-gradient-card border border-[#262626] rounded-2xl p-6 hover:border-[#E10600]/50 transition group"
+                className="flex items-start gap-4 bg-gradient-card border border-[#1F1F1F] rounded-2xl p-6 hover:border-[#E10600]/40 transition group"
               >
                 <div className="w-12 h-12 rounded-xl bg-[#E10600]/10 border border-[#E10600]/20 flex items-center justify-center flex-shrink-0 group-hover:bg-[#E10600] group-hover:text-white transition">
                   <Phone className="w-6 h-6 text-[#E10600] group-hover:text-white" />
@@ -47,7 +47,7 @@ export default function Contact() {
 
               <a
                 href="mailto:dtlcustoms.info@gmail.com"
-                className="flex items-start gap-4 bg-gradient-card border border-[#262626] rounded-2xl p-6 hover:border-[#E10600]/50 transition group"
+                className="flex items-start gap-4 bg-gradient-card border border-[#1F1F1F] rounded-2xl p-6 hover:border-[#E10600]/40 transition group"
               >
                 <div className="w-12 h-12 rounded-xl bg-[#E10600]/10 border border-[#E10600]/20 flex items-center justify-center flex-shrink-0 group-hover:bg-[#E10600] transition">
                   <Mail className="w-6 h-6 text-[#E10600] group-hover:text-white" />
@@ -61,7 +61,7 @@ export default function Contact() {
                 </div>
               </a>
 
-              <div className="flex items-start gap-4 bg-gradient-card border border-[#262626] rounded-2xl p-6">
+              <div className="flex items-start gap-4 bg-gradient-card border border-[#1F1F1F] rounded-2xl p-6">
                 <div className="w-12 h-12 rounded-xl bg-[#E10600]/10 border border-[#E10600]/20 flex items-center justify-center flex-shrink-0">
                   <MapPin className="w-6 h-6 text-[#E10600]" />
                 </div>
@@ -76,7 +76,7 @@ export default function Contact() {
                 href="https://www.facebook.com/profile.php?id=61587179489147"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex items-start gap-4 bg-gradient-card border border-[#262626] rounded-2xl p-6 hover:border-[#E10600]/50 transition group"
+                className="flex items-start gap-4 bg-gradient-card border border-[#1F1F1F] rounded-2xl p-6 hover:border-[#E10600]/40 transition group"
               >
                 <div className="w-12 h-12 rounded-xl bg-[#E10600]/10 border border-[#E10600]/20 flex items-center justify-center flex-shrink-0 group-hover:bg-[#E10600] transition">
                   <Facebook className="w-6 h-6 text-[#E10600] group-hover:text-white" />
@@ -91,7 +91,7 @@ export default function Contact() {
           </FadeIn>
 
           <FadeIn delay={150}>
-            <div className="aspect-square lg:aspect-auto lg:h-full min-h-[500px] rounded-2xl overflow-hidden border border-[#262626] bg-[#1F1F1F]">
+            <div className="aspect-square lg:aspect-auto lg:h-full min-h-[500px] rounded-2xl overflow-hidden border border-[#1F1F1F] bg-[#1F1F1F]">
               <iframe
                 src="https://www.google.com/maps?q=K%C3%B6rmendi+%C3%BAt+45,+Szombathely,+9700&output=embed"
                 width="100%"

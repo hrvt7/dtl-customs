@@ -31,7 +31,7 @@ const benefits = [
 
 export default function About() {
   return (
-    <section id="rolunk" className="py-24 sm:py-32 bg-[#141414] border-y border-[#262626] relative">
+    <section id="rolunk" className="py-24 sm:py-32 bg-surface-alt border-y border-[#1F1F1F] relative">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid lg:grid-cols-2 gap-12 lg:gap-20 items-center">
           <FadeIn>
@@ -51,9 +51,10 @@ export default function About() {
                 </p>
                 <p>
                   Prémium ablakfóliákkal és vezető gyártók PPF termékeivel dolgozunk,
-                  porszívós–fluid környezetben, amely garantálja a buborékmentes,
-                  professzionális eredményt. Célunk, hogy a belépéstől az átadásig
-                  maximális bizalmat és átlátható kommunikációt kapj.
+                  pormentes, kontrollált műhelykörnyezetben, amely garantálja a
+                  buborékmentes, professzionális végeredményt. Célunk, hogy a
+                  belépéstől az átadásig maximális bizalmat és átlátható
+                  kommunikációt kapj.
                 </p>
               </div>
             </div>
@@ -62,7 +63,7 @@ export default function About() {
           <div className="grid sm:grid-cols-2 gap-4">
             {benefits.map((b, i) => (
               <FadeIn key={b.title} delay={i * 100}>
-                <div className="group relative h-full overflow-hidden bg-gradient-card border border-[#262626] rounded-2xl hover:border-[#E10600]/50 hover-lift transition">
+                <div className="group relative h-full overflow-hidden bg-gradient-card border border-[#1F1F1F] rounded-2xl hover:border-[#E10600]/40 hover-lift transition">
                   <div className="relative aspect-[4/3] w-full overflow-hidden">
                     <Image
                       src={b.image}
@@ -72,7 +73,7 @@ export default function About() {
                       className="object-cover transition-transform duration-700 group-hover:scale-105"
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/30 to-transparent pointer-events-none" />
-                    <div className="absolute top-3 left-3 w-10 h-10 rounded-xl bg-[#E10600]/90 backdrop-blur flex items-center justify-center shadow-lg">
+                    <div className="absolute top-3 left-3 w-10 h-10 rounded-xl bg-[#E10600] backdrop-blur flex items-center justify-center shadow-lg">
                       <b.icon className="w-5 h-5 text-white" />
                     </div>
                   </div>

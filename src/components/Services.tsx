@@ -52,7 +52,7 @@ export const services = [
 
 export default function Services() {
   return (
-    <section id="szolgaltatasok" className="py-24 sm:py-32 bg-[#0A0A0A] relative">
+    <section id="szolgaltatasok" className="py-24 sm:py-32 bg-surface relative">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <FadeIn>
           <div className="text-center mb-16">
@@ -75,9 +75,9 @@ export default function Services() {
             <FadeIn key={s.slug} delay={i * 120}>
               <Link
                 href={`/${s.slug}`}
-                className="group block h-full bg-gradient-card border border-[#262626] rounded-3xl overflow-hidden hover:border-[#E10600]/50 hover-lift transition"
+                className="group block h-full bg-gradient-card border border-[#1F1F1F] rounded-3xl overflow-hidden hover:border-[#E10600]/40 hover-lift transition"
               >
-                <div className="relative aspect-[16/10] w-full overflow-hidden bg-black border-b border-[#262626]">
+                <div className="relative aspect-[16/10] w-full overflow-hidden bg-black border-b border-[#1F1F1F]">
                   {s.video ? (
                     <video
                       src={s.video}
@@ -91,13 +91,13 @@ export default function Services() {
                     />
                   ) : (
                     <div className="absolute inset-0 flex items-center justify-center bg-gradient-to-br from-[#1F1F1F] to-[#0A0A0A]">
-                      <div className="w-16 h-16 rounded-2xl bg-gradient-to-br from-[#E10600] to-[#A30400] flex items-center justify-center shadow-lg shadow-[#E10600]/30">
+                      <div className="w-16 h-16 rounded-2xl bg-gradient-to-br from-[#E10600] to-[#A30400] flex items-center justify-center shadow-lg shadow-[#E10600]/20">
                         <s.icon className="w-8 h-8 text-white" />
                       </div>
                     </div>
                   )}
                   <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent pointer-events-none" />
-                  <div className="absolute top-3 left-3 w-10 h-10 rounded-xl bg-[#E10600]/90 backdrop-blur flex items-center justify-center shadow-lg">
+                  <div className="absolute top-3 left-3 w-10 h-10 rounded-xl bg-[#E10600] backdrop-blur flex items-center justify-center shadow-lg">
                     <s.icon className="w-5 h-5 text-white" />
                   </div>
                 </div>

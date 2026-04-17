@@ -12,7 +12,7 @@ export default function Page() {
   return (
     <>
       <Header />
-      <main className="flex-1 py-16 sm:py-20 bg-[#0A0A0A]">
+      <main className="flex-1 py-16 sm:py-20 bg-surface">
         <article className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
           <h1 className="text-4xl font-black text-white mb-2 font-heading">Általános Szerződési Feltételek</h1>
           <p className="text-sm text-[#737373] mb-8">Hatályos: 2026. április 17-től</p>

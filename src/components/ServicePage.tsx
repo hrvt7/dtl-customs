@@ -16,7 +16,7 @@ export interface ServiceContent {
 export default function ServicePage({ content }: { content: ServiceContent }) {
   return (
     <article>
-      <section className="relative overflow-hidden pt-20 pb-20 sm:pt-28 sm:pb-24 border-b border-[#262626] min-h-[460px]">
+      <section className="relative overflow-hidden pt-20 pb-20 sm:pt-28 sm:pb-24 border-b border-[#1F1F1F] min-h-[460px]">
         {content.heroVideo ? (
           <>
             <video
@@ -41,10 +41,10 @@ export default function ServicePage({ content }: { content: ServiceContent }) {
             </div>
           </>
         )}
-        <div className="relative max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="relative max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center sm:text-left">
           <Link
             href="/#szolgaltatasok"
-            className="inline-flex items-center gap-2 text-sm text-[#A3A3A3] hover:text-[#E10600] mb-6 transition"
+            className="inline-flex items-center gap-2 text-sm text-[#A3A3A3] hover:text-white mb-6 transition"
           >
             <ArrowLeft className="w-4 h-4" />
             Vissza a szolgáltatásokhoz
@@ -55,12 +55,12 @@ export default function ServicePage({ content }: { content: ServiceContent }) {
           <h1 className="font-heading font-black text-4xl sm:text-5xl lg:text-6xl text-white leading-tight text-balance">
             {content.title}
           </h1>
-          <p className="mt-4 text-lg text-[#D4D4D4] text-pretty">{content.hero}</p>
+          <p className="mt-4 text-lg text-[#D4D4D4] text-pretty max-w-2xl mx-auto sm:mx-0">{content.hero}</p>
 
-          <div className="mt-8 flex flex-col sm:flex-row gap-3">
+          <div className="mt-8 flex flex-col sm:flex-row gap-3 justify-center sm:justify-start">
             <a
               href="tel:+36303899625"
-              className="inline-flex items-center justify-center gap-2 px-6 py-3.5 rounded-full bg-gradient-to-r from-[#E10600] to-[#A30400] text-white font-bold shadow-xl shadow-[#E10600]/30 hover:shadow-2xl transition"
+              className="inline-flex items-center justify-center gap-2 px-6 py-3.5 rounded-full bg-gradient-to-r from-[#E10600] to-[#A30400] text-white font-bold shadow-xl shadow-[#E10600]/20 hover:shadow-2xl transition"
             >
               <Phone className="w-5 h-5" />
               Ajánlatkérés · +36 30 389 9625
@@ -76,7 +76,7 @@ export default function ServicePage({ content }: { content: ServiceContent }) {
         </div>
       </section>
 
-      <section className="py-16 sm:py-20 bg-[#0A0A0A]">
+      <section className="py-16 sm:py-20 bg-surface">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <FadeIn>
             <p className="text-lg text-[#D4D4D4] leading-relaxed text-pretty mb-12">
@@ -85,7 +85,7 @@ export default function ServicePage({ content }: { content: ServiceContent }) {
           </FadeIn>
 
           <FadeIn>
-            <div className="bg-gradient-card border border-[#262626] rounded-2xl p-6 sm:p-8 mb-14">
+            <div className="bg-gradient-card border border-[#1F1F1F] rounded-2xl p-6 sm:p-8 mb-14">
               <h3 className="font-heading font-bold text-xl text-white mb-5">Miért érdemes minket választanod?</h3>
               <ul className="grid sm:grid-cols-2 gap-3">
                 {content.benefits.map((b) => (
@@ -116,7 +116,7 @@ export default function ServicePage({ content }: { content: ServiceContent }) {
           </div>
 
           <FadeIn>
-            <div className="mt-16 pt-12 border-t border-[#262626]">
+            <div className="mt-16 pt-12 border-t border-[#1F1F1F]">
               <h2 className="font-heading font-bold text-2xl sm:text-3xl text-white mb-6">
                 Gyakori kérdések
               </h2>
@@ -124,7 +124,7 @@ export default function ServicePage({ content }: { content: ServiceContent }) {
                 {content.faqs.map((f, i) => (
                   <div
                     key={i}
-                    className="bg-gradient-card border border-[#262626] rounded-2xl p-6"
+                    className="bg-gradient-card border border-[#1F1F1F] rounded-2xl p-6"
                   >
                     <h3 className="font-heading font-semibold text-white text-lg mb-2">{f.q}</h3>
                     <p className="text-[#A3A3A3] text-sm leading-relaxed text-pretty">{f.a}</p>
@@ -167,7 +167,7 @@ export default function ServicePage({ content }: { content: ServiceContent }) {
                 </a>
                 <a
                   href="mailto:dtlcustoms.info@gmail.com"
-                  className="inline-flex items-center justify-center gap-2 px-6 py-3.5 rounded-full border-2 border-white text-white font-bold hover:bg-white hover:text-[#E10600] transition-colors hover:text-white transition"
+                  className="inline-flex items-center justify-center gap-2 px-6 py-3.5 rounded-full border-2 border-white/80 text-white font-bold hover:bg-white hover:text-[#E10600] transition-colors"
                 >
                   E-mail küldése
                 </a>
