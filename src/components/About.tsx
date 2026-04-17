@@ -73,9 +73,6 @@ export default function About() {
                       className="object-cover transition-transform duration-700 group-hover:scale-105"
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/30 to-transparent pointer-events-none" />
-                    <div className="absolute top-3 left-3 w-10 h-10 rounded-xl bg-[#E10600] backdrop-blur flex items-center justify-center shadow-lg">
-                      <b.icon className="w-5 h-5 text-white" />
-                    </div>
                   </div>
                   <div className="p-5">
                     <h3 className="font-heading font-bold text-lg text-white mb-2">{b.title}</h3>

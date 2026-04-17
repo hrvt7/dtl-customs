@@ -97,9 +97,6 @@ export default function Services() {
                     </div>
                   )}
                   <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent pointer-events-none" />
-                  <div className="absolute top-3 left-3 w-10 h-10 rounded-xl bg-[#E10600] backdrop-blur flex items-center justify-center shadow-lg">
-                    <s.icon className="w-5 h-5 text-white" />
-                  </div>
                 </div>
                 <div className="p-8">
                 <h3 className="font-heading font-bold text-xl text-white mb-1 uppercase tracking-wide">
