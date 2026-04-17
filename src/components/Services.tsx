@@ -21,7 +21,7 @@ export const services = [
   {
     slug: "ho-foliazas",
     icon: Thermometer,
-    video: null,
+    video: "/videos/ho.webm",
     title: "Hővédő ablakfóliázás",
     tagline: "Infravörös- és hővisszaverő technológia",
     description:

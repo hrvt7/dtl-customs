@@ -18,6 +18,7 @@ export default function Page() {
         <ServicePage
           content={{
             slug: "ho-foliazas",
+            heroVideo: "/videos/ho.webm",
             title: "Hővédő autóüveg-fóliázás",
             hero: "Nanokerámia alapú hővédő fólia, amely a napmeleg akár 80%-át visszaveri — hűvösebb utastér, kényelmesebb utazás, alacsonyabb fogyasztás.",
             intro:
