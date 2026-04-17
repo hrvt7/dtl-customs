@@ -17,11 +17,11 @@ export default function Schedule() {
       <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
         <FadeIn>
           <div className="text-center mb-12">
-            <div className="inline-block px-4 py-1.5 rounded-full bg-[#E10600]/10 text-[#E10600] text-xs font-bold uppercase tracking-widest mb-4">
+            <div className="inline-block px-4 py-1.5 rounded-full bg-[#06B6D4]/10 text-[#06B6D4] text-xs font-bold uppercase tracking-widest mb-4">
               Nyitvatartás
             </div>
             <h2 className="font-heading font-black text-3xl sm:text-5xl text-white text-balance">
-              Mikor <span className="text-[#E10600]">fogadunk?</span>
+              Mikor <span className="text-[#06B6D4]">fogadunk?</span>
             </h2>
             <p className="mt-4 text-[#A3A3A3]">
               A fóliázás időpontra érkezéssel történik — kérlek egyeztess telefonon.
@@ -38,12 +38,12 @@ export default function Schedule() {
                   className="flex items-center justify-between px-6 py-5 hover:bg-[#1F1F1F]/50 transition"
                 >
                   <div className="flex items-center gap-4">
-                    <Clock className="w-5 h-5 text-[#E10600]" />
+                    <Clock className="w-5 h-5 text-[#06B6D4]" />
                     <span className="font-heading font-semibold text-white">{s.day}</span>
                   </div>
                   <span
                     className={`font-medium ${
-                      s.hours === "Zárva" ? "text-[#737373]" : s.note ? "text-[#E10600]" : "text-[#D4D4D4]"
+                      s.hours === "Zárva" ? "text-[#737373]" : s.note ? "text-[#06B6D4]" : "text-[#D4D4D4]"
                     }`}
                   >
                     {s.hours}
@@ -51,17 +51,17 @@ export default function Schedule() {
                 </div>
               ))}
             </div>
-            <div className="bg-[#E10600]/5 border-t border-[#E10600]/20 px-6 py-5 flex items-start gap-3">
-              <CalendarCheck className="w-5 h-5 text-[#E10600] flex-shrink-0 mt-0.5" />
+            <div className="bg-[#06B6D4]/5 border-t border-[#06B6D4]/20 px-6 py-5 flex items-start gap-3">
+              <CalendarCheck className="w-5 h-5 text-[#06B6D4] flex-shrink-0 mt-0.5" />
               <p className="text-sm text-[#D4D4D4]">
                 Minden fóliázás előzetes egyeztetést igényel. Hívj minket a{" "}
-                <a href="tel:+36303899625" className="text-[#E10600] font-semibold hover:underline">
+                <a href="tel:+36303899625" className="text-[#06B6D4] font-semibold hover:underline">
                   +36 30 389 9625
                 </a>{" "}
                 számon, vagy írj a{" "}
                 <a
                   href="mailto:dtlcustoms.info@gmail.com"
-                  className="text-[#E10600] font-semibold hover:underline"
+                  className="text-[#06B6D4] font-semibold hover:underline"
                 >
                   dtlcustoms.info@gmail.com
                 </a>{" "}

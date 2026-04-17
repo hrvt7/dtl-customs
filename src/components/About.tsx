@@ -36,11 +36,11 @@ export default function About() {
         <div className="grid lg:grid-cols-2 gap-12 lg:gap-20 items-center">
           <FadeIn>
             <div>
-              <div className="inline-block px-4 py-1.5 rounded-full bg-[#E10600]/10 text-[#E10600] text-xs font-bold uppercase tracking-widest mb-4">
+              <div className="inline-block px-4 py-1.5 rounded-full bg-[#06B6D4]/10 text-[#06B6D4] text-xs font-bold uppercase tracking-widest mb-4">
                 Rólunk
               </div>
               <h2 className="font-heading font-black text-3xl sm:text-5xl text-white text-balance mb-6">
-                A DTL Customs mögött <span className="text-[#E10600]">szenvedély</span> áll.
+                A DTL Customs mögött <span className="text-[#06B6D4]">szenvedély</span> áll.
               </h2>
               <div className="space-y-4 text-[#D4D4D4] text-pretty">
                 <p>
@@ -63,7 +63,7 @@ export default function About() {
           <div className="grid sm:grid-cols-2 gap-4">
             {benefits.map((b, i) => (
               <FadeIn key={b.title} delay={i * 100}>
-                <div className="group relative h-full overflow-hidden bg-gradient-card border border-[#1F1F1F] rounded-2xl hover:border-[#E10600]/40 hover-lift transition">
+                <div className="group relative h-full overflow-hidden bg-gradient-card border border-[#1F1F1F] rounded-2xl hover:border-[#06B6D4]/40 hover-lift transition">
                   <div className="relative aspect-[4/3] w-full overflow-hidden">
                     <Image
                       src={b.image}

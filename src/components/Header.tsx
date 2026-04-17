@@ -34,7 +34,7 @@ export default function Header() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-20">
           <Link href="/" className="flex items-center gap-3">
-            <div className="relative w-11 h-11 rounded-full overflow-hidden border-2 border-[#E10600]/60 shadow-lg shadow-[#E10600]/20">
+            <div className="relative w-11 h-11 rounded-full overflow-hidden border-2 border-[#06B6D4]/60 shadow-lg shadow-[#06B6D4]/20">
               <Image
                 src="/images/profile.webp"
                 alt="DTL Customs"
@@ -65,7 +65,7 @@ export default function Header() {
           <div className="hidden lg:flex items-center gap-3">
             <a
               href="tel:+36303899625"
-              className="inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-gradient-to-r from-[#E10600] to-[#A30400] text-white font-semibold text-sm hover:shadow-lg hover:shadow-[#E10600]/20 transition"
+              className="inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-gradient-to-r from-[#06B6D4] to-[#0E7490] text-white font-semibold text-sm hover:shadow-lg hover:shadow-[#06B6D4]/20 transition"
             >
               <Phone className="w-4 h-4" />
               +36 30 389 9625
@@ -90,14 +90,14 @@ export default function Header() {
                 key={l.href}
                 href={l.href}
                 onClick={() => setOpen(false)}
-                className="px-4 py-3 rounded-lg text-[#D4D4D4] hover:bg-[#1F1F1F] hover:text-[#E10600] font-medium"
+                className="px-4 py-3 rounded-lg text-[#D4D4D4] hover:bg-[#1F1F1F] hover:text-[#06B6D4] font-medium"
               >
                 {l.label}
               </Link>
             ))}
             <a
               href="tel:+36303899625"
-              className="mt-2 inline-flex items-center justify-center gap-2 px-5 py-3 rounded-full bg-gradient-to-r from-[#E10600] to-[#A30400] text-white font-semibold"
+              className="mt-2 inline-flex items-center justify-center gap-2 px-5 py-3 rounded-full bg-gradient-to-r from-[#06B6D4] to-[#0E7490] text-white font-semibold"
             >
               <Phone className="w-4 h-4" />
               +36 30 389 9625
