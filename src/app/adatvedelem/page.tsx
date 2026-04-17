@@ -13,7 +13,7 @@ export default function Page() {
     <>
       <Header />
       <main className="flex-1 py-16 sm:py-20 bg-[#0A0A0A]">
-        <article className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 prose prose-invert prose-headings:font-heading prose-headings:text-white prose-p:text-[#D4D4D4] prose-a:text-[#E89B5A] prose-strong:text-white">
+        <article className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 prose prose-invert prose-headings:font-heading prose-headings:text-white prose-p:text-[#D4D4D4] prose-a:text-[#E10600] prose-strong:text-white">
           <h1 className="text-4xl font-black text-white mb-2">Adatvédelmi tájékoztató</h1>
           <p className="text-sm text-[#737373]">Hatályos: 2026. április 17-től</p>
 

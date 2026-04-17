@@ -6,6 +6,7 @@ export const services = [
   {
     slug: "feny-foliazas",
     icon: Sun,
+    video: "/videos/feny.webm",
     title: "Fényvédő ablakfóliázás",
     tagline: "UV- és vakításvédelem · prémium színárnyalatok",
     description:
@@ -20,6 +21,7 @@ export const services = [
   {
     slug: "ho-foliazas",
     icon: Thermometer,
+    video: null,
     title: "Hővédő ablakfóliázás",
     tagline: "Infravörös- és hővisszaverő technológia",
     description:
@@ -34,6 +36,7 @@ export const services = [
   {
     slug: "ppf-karosszeria",
     icon: Shield,
+    video: "/videos/ppf.webm",
     title: "PPF karosszéria-védelem",
     tagline: "Paint Protection Film · kavicsfelverődés ellen",
     description:
@@ -53,12 +56,12 @@ export default function Services() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <FadeIn>
           <div className="text-center mb-16">
-            <div className="inline-block px-4 py-1.5 rounded-full bg-[#E89B5A]/10 text-[#E89B5A] text-xs font-bold uppercase tracking-widest mb-4">
+            <div className="inline-block px-4 py-1.5 rounded-full bg-[#E10600]/10 text-[#E10600] text-xs font-bold uppercase tracking-widest mb-4">
               Szolgáltatásaink
             </div>
             <h2 className="font-heading font-black text-3xl sm:text-5xl text-white text-balance">
               Teljes körű védelem —<br />
-              <span className="text-[#E89B5A]">fénytől a kavicsig.</span>
+              <span className="text-[#E10600]">fénytől a kavicsig.</span>
             </h2>
             <p className="mt-4 text-lg text-[#A3A3A3] max-w-2xl mx-auto text-pretty">
               Három prémium szolgáltatás, egy cél: hogy autód látványa és értéke
@@ -72,29 +75,52 @@ export default function Services() {
             <FadeIn key={s.slug} delay={i * 120}>
               <Link
                 href={`/${s.slug}`}
-                className="group block h-full bg-gradient-card border border-[#262626] rounded-3xl p-8 hover:border-[#E89B5A]/50 hover-lift transition"
+                className="group block h-full bg-gradient-card border border-[#262626] rounded-3xl overflow-hidden hover:border-[#E10600]/50 hover-lift transition"
               >
-                <div className="w-14 h-14 rounded-2xl bg-gradient-to-br from-[#E89B5A] to-[#C07A3A] flex items-center justify-center mb-6 shadow-lg shadow-[#E89B5A]/20">
-                  <s.icon className="w-7 h-7 text-[#0A0A0A]" />
+                <div className="relative aspect-[16/10] w-full overflow-hidden bg-black border-b border-[#262626]">
+                  {s.video ? (
+                    <video
+                      src={s.video}
+                      autoPlay
+                      muted
+                      loop
+                      playsInline
+                      preload="metadata"
+                      className="absolute inset-0 w-full h-full object-cover"
+                      aria-label={s.title}
+                    />
+                  ) : (
+                    <div className="absolute inset-0 flex items-center justify-center bg-gradient-to-br from-[#1F1F1F] to-[#0A0A0A]">
+                      <div className="w-16 h-16 rounded-2xl bg-gradient-to-br from-[#E10600] to-[#A30400] flex items-center justify-center shadow-lg shadow-[#E10600]/30">
+                        <s.icon className="w-8 h-8 text-white" />
+                      </div>
+                    </div>
+                  )}
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent pointer-events-none" />
+                  <div className="absolute top-3 left-3 w-10 h-10 rounded-xl bg-[#E10600]/90 backdrop-blur flex items-center justify-center shadow-lg">
+                    <s.icon className="w-5 h-5 text-white" />
+                  </div>
                 </div>
-                <h3 className="font-heading font-bold text-xl text-white mb-1">
+                <div className="p-8">
+                <h3 className="font-heading font-bold text-xl text-white mb-1 uppercase tracking-wide">
                   {s.title}
                 </h3>
-                <p className="text-sm text-[#E89B5A] font-medium mb-4">{s.tagline}</p>
+                <p className="text-sm text-[#E10600] font-medium mb-4">{s.tagline}</p>
                 <p className="text-[#A3A3A3] text-sm leading-relaxed mb-6 text-pretty">
                   {s.description}
                 </p>
                 <ul className="space-y-2 mb-6">
                   {s.features.map((f) => (
                     <li key={f} className="flex items-start gap-2 text-sm text-[#D4D4D4]">
-                      <span className="w-1.5 h-1.5 rounded-full bg-[#E89B5A] mt-2 flex-shrink-0" />
+                      <span className="w-1.5 h-1.5 rounded-full bg-[#E10600] mt-2 flex-shrink-0" />
                       {f}
                     </li>
                   ))}
                 </ul>
-                <div className="inline-flex items-center gap-2 text-[#E89B5A] font-semibold text-sm group-hover:gap-3 transition-all">
+                <div className="inline-flex items-center gap-2 text-[#E10600] font-semibold text-sm group-hover:gap-3 transition-all">
                   Részletek
                   <ArrowRight className="w-4 h-4" />
+                </div>
                 </div>
               </Link>
             </FadeIn>

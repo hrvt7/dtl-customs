@@ -33,7 +33,7 @@ export default function Header() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-20">
           <Link href="/" className="flex items-center gap-3">
-            <div className="w-11 h-11 rounded-full bg-gradient-to-br from-[#E89B5A] to-[#C07A3A] flex items-center justify-center font-heading font-black text-[#0A0A0A] text-lg shadow-lg">
+            <div className="w-11 h-11 rounded-full bg-gradient-to-br from-[#E10600] to-[#A30400] flex items-center justify-center font-heading font-black text-white text-lg shadow-lg">
               DTL
             </div>
             <div className="hidden sm:block">
@@ -47,7 +47,7 @@ export default function Header() {
               <Link
                 key={l.href}
                 href={l.href}
-                className="text-sm font-medium text-[#D4D4D4] hover:text-[#E89B5A] transition"
+                className="text-sm font-medium text-[#D4D4D4] hover:text-[#E10600] transition"
               >
                 {l.label}
               </Link>
@@ -57,7 +57,7 @@ export default function Header() {
           <div className="hidden lg:flex items-center gap-3">
             <a
               href="tel:+36303899625"
-              className="inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-gradient-to-r from-[#E89B5A] to-[#C07A3A] text-[#0A0A0A] font-semibold text-sm hover:shadow-lg hover:shadow-[#E89B5A]/30 transition"
+              className="inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-gradient-to-r from-[#E10600] to-[#A30400] text-white font-semibold text-sm hover:shadow-lg hover:shadow-[#E10600]/30 transition"
             >
               <Phone className="w-4 h-4" />
               +36 30 389 9625
@@ -82,14 +82,14 @@ export default function Header() {
                 key={l.href}
                 href={l.href}
                 onClick={() => setOpen(false)}
-                className="px-4 py-3 rounded-lg text-[#D4D4D4] hover:bg-[#1F1F1F] hover:text-[#E89B5A] font-medium"
+                className="px-4 py-3 rounded-lg text-[#D4D4D4] hover:bg-[#1F1F1F] hover:text-[#E10600] font-medium"
               >
                 {l.label}
               </Link>
             ))}
             <a
               href="tel:+36303899625"
-              className="mt-2 inline-flex items-center justify-center gap-2 px-5 py-3 rounded-full bg-gradient-to-r from-[#E89B5A] to-[#C07A3A] text-[#0A0A0A] font-semibold"
+              className="mt-2 inline-flex items-center justify-center gap-2 px-5 py-3 rounded-full bg-gradient-to-r from-[#E10600] to-[#A30400] text-white font-semibold"
             >
               <Phone className="w-4 h-4" />
               +36 30 389 9625
