@@ -1,5 +1,6 @@
 "use client";
 import Link from "next/link";
+import Image from "next/image";
 import { useEffect, useState } from "react";
 import { Menu, X, Phone } from "lucide-react";
 
@@ -33,8 +34,15 @@ export default function Header() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-20">
           <Link href="/" className="flex items-center gap-3">
-            <div className="w-11 h-11 rounded-full bg-gradient-to-br from-[#E10600] to-[#A30400] flex items-center justify-center font-heading font-black text-white text-lg shadow-lg">
-              DTL
+            <div className="relative w-11 h-11 rounded-full overflow-hidden border-2 border-[#E10600]/60 shadow-lg shadow-[#E10600]/20">
+              <Image
+                src="/images/profile.webp"
+                alt="DTL Customs"
+                fill
+                sizes="44px"
+                className="object-cover"
+                priority
+              />
             </div>
             <div className="hidden sm:block">
               <div className="font-heading font-bold text-white leading-tight">DTL Customs</div>

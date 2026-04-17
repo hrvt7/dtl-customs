@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import { Phone, Shield, Sun, Sparkles, ArrowRight } from "lucide-react";
 
 export default function Hero() {
@@ -85,9 +86,33 @@ export default function Hero() {
           </div>
         </div>
 
-        <div className="hidden lg:block absolute right-8 bottom-8 bg-[#E10600] text-white rounded-2xl px-5 py-3 font-bold shadow-xl shadow-[#E10600]/25">
-          <div className="text-xs uppercase tracking-widest opacity-90">Garancia</div>
-          <div className="text-lg">Akár 10 év</div>
+        {/* Floating profile card — desktop only */}
+        <div className="hidden lg:block absolute right-8 top-1/2 -translate-y-1/2">
+          <div className="relative w-[260px] rounded-3xl overflow-hidden border border-white/10 bg-black/40 backdrop-blur-md shadow-2xl">
+            <div className="relative aspect-[3/4] w-full">
+              <Image
+                src="/images/profile.webp"
+                alt="DTL Customs tulajdonos"
+                fill
+                sizes="260px"
+                className="object-cover"
+                priority
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/85 via-black/10 to-transparent" />
+            </div>
+            <div className="absolute bottom-0 left-0 right-0 p-5">
+              <div className="text-[10px] uppercase tracking-[0.2em] text-[#FF3D3D] font-bold mb-1">DTL Customs · Szombathely</div>
+              <div className="font-heading font-black text-white text-lg leading-tight">Prémium autófóliázás</div>
+              <div className="mt-2 inline-flex items-center gap-2 text-xs text-white/80">
+                <span className="w-2 h-2 rounded-full bg-[#E10600] animate-pulse" />
+                Időpontfoglalás folyamatban
+              </div>
+            </div>
+          </div>
+          <div className="mt-3 text-center bg-[#E10600] text-white rounded-2xl px-5 py-3 font-bold shadow-xl shadow-[#E10600]/25">
+            <div className="text-[10px] uppercase tracking-widest opacity-90">Garancia</div>
+            <div className="text-lg leading-tight">Akár 10 év</div>
+          </div>
         </div>
       </div>
     </section>
