@@ -37,7 +37,7 @@ export default function ServicePage({ content }: { content: ServiceContent }) {
           <>
             <div className="absolute inset-0 bg-gradient-hero" />
             <div className="absolute inset-0 pointer-events-none opacity-30">
-              <div className="absolute top-0 left-1/3 w-96 h-96 bg-[#06B6D4] rounded-full mix-blend-screen filter blur-3xl opacity-20" />
+              <div className="absolute top-0 left-1/3 w-96 h-96 bg-[#A3A3A3] rounded-full mix-blend-screen filter blur-3xl opacity-20" />
             </div>
           </>
         )}
@@ -49,7 +49,7 @@ export default function ServicePage({ content }: { content: ServiceContent }) {
             <ArrowLeft className="w-4 h-4" />
             Vissza a szolgáltatásokhoz
           </Link>
-          <div className="inline-block px-4 py-1.5 rounded-full bg-[#06B6D4]/10 text-[#06B6D4] text-xs font-bold uppercase tracking-widest mb-4">
+          <div className="inline-block px-4 py-1.5 rounded-full bg-[#A3A3A3]/10 text-[#A3A3A3] text-xs font-bold uppercase tracking-widest mb-4">
             Szolgáltatás · Szombathely
           </div>
           <h1 className="font-heading font-black text-4xl sm:text-5xl lg:text-6xl text-white leading-tight text-balance">
@@ -73,7 +73,7 @@ export default function ServicePage({ content }: { content: ServiceContent }) {
               <ul className="grid sm:grid-cols-2 gap-3">
                 {content.benefits.map((b) => (
                   <li key={b} className="flex items-start gap-3 text-[#D4D4D4]">
-                    <div className="w-5 h-5 rounded-full bg-[#06B6D4] flex items-center justify-center flex-shrink-0 mt-0.5">
+                    <div className="w-5 h-5 rounded-full bg-[#A3A3A3] flex items-center justify-center flex-shrink-0 mt-0.5">
                       <Check className="w-3 h-3 text-white" strokeWidth={3} />
                     </div>
                     <span className="text-sm">{b}</span>
@@ -133,7 +133,7 @@ export default function ServicePage({ content }: { content: ServiceContent }) {
           </FadeIn>
 
           <FadeIn>
-            <div className="mt-16 rounded-3xl bg-gradient-to-br from-[#06B6D4] to-[#0E7490] p-8 sm:p-12 text-center shadow-2xl shadow-[#06B6D4]/20">
+            <div className="mt-16 rounded-3xl bg-gradient-to-br from-[#A3A3A3] to-[#525252] p-8 sm:p-12 text-center shadow-2xl shadow-[#A3A3A3]/20">
               <h2 className="font-heading font-black text-2xl sm:text-3xl text-white mb-3 text-balance">
                 Kérj személyre szabott árajánlatot!
               </h2>
@@ -150,7 +150,7 @@ export default function ServicePage({ content }: { content: ServiceContent }) {
                 </a>
                 <a
                   href="mailto:dtlcustoms.info@gmail.com"
-                  className="inline-flex items-center justify-center gap-2 px-6 py-3.5 rounded-full border-2 border-white/80 text-white font-bold hover:bg-white hover:text-[#06B6D4] transition-colors"
+                  className="inline-flex items-center justify-center gap-2 px-6 py-3.5 rounded-full border-2 border-white/80 text-white font-bold hover:bg-white hover:text-[#A3A3A3] transition-colors"
                 >
                   E-mail küldése
                 </a>

@@ -15,11 +15,11 @@ export default function Contact() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <FadeIn>
           <div className="text-center mb-14">
-            <div className="inline-block px-4 py-1.5 rounded-full bg-[#06B6D4]/10 text-[#06B6D4] text-xs font-bold uppercase tracking-widest mb-4">
+            <div className="inline-block px-4 py-1.5 rounded-full bg-[#A3A3A3]/10 text-[#A3A3A3] text-xs font-bold uppercase tracking-widest mb-4">
               Kapcsolat
             </div>
             <h2 className="font-heading font-black text-3xl sm:text-5xl text-white text-balance">
-              Kérj <span className="text-[#06B6D4]">ajánlatot</span> — ingyenesen.
+              Kérj <span className="text-[#A3A3A3]">ajánlatot</span> — ingyenesen.
             </h2>
             <p className="mt-4 text-[#A3A3A3] max-w-2xl mx-auto">
               Küldd el autód adatait és a tervezett munkát, mi pedig személyre szabott
@@ -33,10 +33,10 @@ export default function Contact() {
             <div className="space-y-4">
               <a
                 href="tel:+36303899625"
-                className="flex items-start gap-4 bg-gradient-card border border-[#1F1F1F] rounded-2xl p-6 hover:border-[#06B6D4]/40 transition group"
+                className="flex items-start gap-4 bg-gradient-card border border-[#1F1F1F] rounded-2xl p-6 hover:border-[#A3A3A3]/40 transition group"
               >
-                <div className="w-12 h-12 rounded-xl bg-[#06B6D4]/10 border border-[#06B6D4]/20 flex items-center justify-center flex-shrink-0 group-hover:bg-[#06B6D4] group-hover:text-white transition">
-                  <Phone className="w-6 h-6 text-[#06B6D4] group-hover:text-white" />
+                <div className="w-12 h-12 rounded-xl bg-[#A3A3A3]/10 border border-[#A3A3A3]/20 flex items-center justify-center flex-shrink-0 group-hover:bg-[#A3A3A3] group-hover:text-white transition">
+                  <Phone className="w-6 h-6 text-[#A3A3A3] group-hover:text-white" />
                 </div>
                 <div>
                   <div className="text-xs uppercase tracking-wider text-[#737373] font-semibold">Telefon</div>
@@ -47,10 +47,10 @@ export default function Contact() {
 
               <a
                 href="mailto:dtlcustoms.info@gmail.com"
-                className="flex items-start gap-4 bg-gradient-card border border-[#1F1F1F] rounded-2xl p-6 hover:border-[#06B6D4]/40 transition group"
+                className="flex items-start gap-4 bg-gradient-card border border-[#1F1F1F] rounded-2xl p-6 hover:border-[#A3A3A3]/40 transition group"
               >
-                <div className="w-12 h-12 rounded-xl bg-[#06B6D4]/10 border border-[#06B6D4]/20 flex items-center justify-center flex-shrink-0 group-hover:bg-[#06B6D4] transition">
-                  <Mail className="w-6 h-6 text-[#06B6D4] group-hover:text-white" />
+                <div className="w-12 h-12 rounded-xl bg-[#A3A3A3]/10 border border-[#A3A3A3]/20 flex items-center justify-center flex-shrink-0 group-hover:bg-[#A3A3A3] transition">
+                  <Mail className="w-6 h-6 text-[#A3A3A3] group-hover:text-white" />
                 </div>
                 <div>
                   <div className="text-xs uppercase tracking-wider text-[#737373] font-semibold">E-mail</div>
@@ -62,8 +62,8 @@ export default function Contact() {
               </a>
 
               <div className="flex items-start gap-4 bg-gradient-card border border-[#1F1F1F] rounded-2xl p-6">
-                <div className="w-12 h-12 rounded-xl bg-[#06B6D4]/10 border border-[#06B6D4]/20 flex items-center justify-center flex-shrink-0">
-                  <MapPin className="w-6 h-6 text-[#06B6D4]" />
+                <div className="w-12 h-12 rounded-xl bg-[#A3A3A3]/10 border border-[#A3A3A3]/20 flex items-center justify-center flex-shrink-0">
+                  <MapPin className="w-6 h-6 text-[#A3A3A3]" />
                 </div>
                 <div>
                   <div className="text-xs uppercase tracking-wider text-[#737373] font-semibold">Műhely</div>
@@ -76,10 +76,10 @@ export default function Contact() {
                 href="https://www.facebook.com/profile.php?id=61587179489147"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex items-start gap-4 bg-gradient-card border border-[#1F1F1F] rounded-2xl p-6 hover:border-[#06B6D4]/40 transition group"
+                className="flex items-start gap-4 bg-gradient-card border border-[#1F1F1F] rounded-2xl p-6 hover:border-[#A3A3A3]/40 transition group"
               >
-                <div className="w-12 h-12 rounded-xl bg-[#06B6D4]/10 border border-[#06B6D4]/20 flex items-center justify-center flex-shrink-0 group-hover:bg-[#06B6D4] transition">
-                  <Facebook className="w-6 h-6 text-[#06B6D4] group-hover:text-white" />
+                <div className="w-12 h-12 rounded-xl bg-[#A3A3A3]/10 border border-[#A3A3A3]/20 flex items-center justify-center flex-shrink-0 group-hover:bg-[#A3A3A3] transition">
+                  <Facebook className="w-6 h-6 text-[#A3A3A3] group-hover:text-white" />
                 </div>
                 <div>
                   <div className="text-xs uppercase tracking-wider text-[#737373] font-semibold">Facebook</div>

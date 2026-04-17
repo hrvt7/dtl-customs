@@ -13,7 +13,7 @@ export default function Page() {
     <>
       <Header />
       <main className="flex-1 pt-32 pb-16 sm:pt-36 sm:pb-20 bg-surface">
-        <article className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 prose prose-invert prose-headings:font-heading prose-headings:text-white prose-p:text-[#D4D4D4] prose-a:text-[#06B6D4] prose-strong:text-white">
+        <article className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 prose prose-invert prose-headings:font-heading prose-headings:text-white prose-p:text-[#D4D4D4] prose-a:text-[#A3A3A3] prose-strong:text-white">
           <h1 className="text-4xl font-black text-white mb-2">Adatvédelmi tájékoztató</h1>
           <p className="text-sm text-[#737373]">Hatályos: 2026. április 17-től</p>
 

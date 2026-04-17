@@ -46,11 +46,11 @@ export default function FAQ() {
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
         <FadeIn>
           <div className="text-center mb-14">
-            <div className="inline-block px-4 py-1.5 rounded-full bg-[#06B6D4]/10 text-[#06B6D4] text-xs font-bold uppercase tracking-widest mb-4">
+            <div className="inline-block px-4 py-1.5 rounded-full bg-[#A3A3A3]/10 text-[#A3A3A3] text-xs font-bold uppercase tracking-widest mb-4">
               GYIK
             </div>
             <h2 className="font-heading font-black text-3xl sm:text-5xl text-white text-balance">
-              Gyakori <span className="text-[#06B6D4]">kérdések</span>
+              Gyakori <span className="text-[#A3A3A3]">kérdések</span>
             </h2>
           </div>
         </FadeIn>
@@ -60,7 +60,7 @@ export default function FAQ() {
             <FadeIn key={i} delay={i * 50}>
               <div
                 className={`bg-gradient-card border rounded-2xl overflow-hidden transition ${
-                  open === i ? "border-[#06B6D4]/30" : "border-[#1F1F1F]"
+                  open === i ? "border-[#A3A3A3]/30" : "border-[#1F1F1F]"
                 }`}
               >
                 <button
@@ -69,7 +69,7 @@ export default function FAQ() {
                 >
                   <span className="font-heading font-semibold text-white text-lg">{f.q}</span>
                   <ChevronDown
-                    className={`w-5 h-5 text-[#06B6D4] flex-shrink-0 transition-transform ${
+                    className={`w-5 h-5 text-[#A3A3A3] flex-shrink-0 transition-transform ${
                       open === i ? "rotate-180" : ""
                     }`}
                   />

@@ -16,7 +16,7 @@ export default function Footer() {
         <div className="grid md:grid-cols-4 gap-10">
           <div className="md:col-span-1">
             <div className="flex items-center gap-3 mb-4">
-              <div className="w-11 h-11 rounded-full bg-gradient-to-br from-[#06B6D4] to-[#0E7490] flex items-center justify-center font-heading font-black text-white">
+              <div className="w-11 h-11 rounded-full bg-gradient-to-br from-[#A3A3A3] to-[#525252] flex items-center justify-center font-heading font-black text-white">
                 DTL
               </div>
               <div>
@@ -32,21 +32,21 @@ export default function Footer() {
           <div>
             <h4 className="font-heading font-bold text-white mb-4">Szolgáltatások</h4>
             <ul className="space-y-2 text-sm">
-              <li><Link href="/feny-foliazas" className="text-[#A3A3A3] hover:text-[#06B6D4] transition">Fényvédő fólia</Link></li>
-              <li><Link href="/ho-foliazas" className="text-[#A3A3A3] hover:text-[#06B6D4] transition">Hővédő fólia</Link></li>
-              <li><Link href="/ppf-karosszeria" className="text-[#A3A3A3] hover:text-[#06B6D4] transition">PPF karosszéria-védelem</Link></li>
+              <li><Link href="/feny-foliazas" className="text-[#A3A3A3] hover:text-[#A3A3A3] transition">Fényvédő fólia</Link></li>
+              <li><Link href="/ho-foliazas" className="text-[#A3A3A3] hover:text-[#A3A3A3] transition">Hővédő fólia</Link></li>
+              <li><Link href="/ppf-karosszeria" className="text-[#A3A3A3] hover:text-[#A3A3A3] transition">PPF karosszéria-védelem</Link></li>
             </ul>
           </div>
 
           <div>
             <h4 className="font-heading font-bold text-white mb-4">Oldalak</h4>
             <ul className="space-y-2 text-sm">
-              <li><Link href="/#rolunk" className="text-[#A3A3A3] hover:text-[#06B6D4] transition">Rólunk</Link></li>
-              <li><Link href="/#nyitvatartas" className="text-[#A3A3A3] hover:text-[#06B6D4] transition">Nyitvatartás</Link></li>
-              <li><Link href="/#gyik" className="text-[#A3A3A3] hover:text-[#06B6D4] transition">GYIK</Link></li>
-              <li><Link href="/#kapcsolat" className="text-[#A3A3A3] hover:text-[#06B6D4] transition">Kapcsolat</Link></li>
-              <li><Link href="/adatvedelem" className="text-[#A3A3A3] hover:text-[#06B6D4] transition">Adatvédelem</Link></li>
-              <li><Link href="/aszf" className="text-[#A3A3A3] hover:text-[#06B6D4] transition">ÁSZF</Link></li>
+              <li><Link href="/#rolunk" className="text-[#A3A3A3] hover:text-[#A3A3A3] transition">Rólunk</Link></li>
+              <li><Link href="/#nyitvatartas" className="text-[#A3A3A3] hover:text-[#A3A3A3] transition">Nyitvatartás</Link></li>
+              <li><Link href="/#gyik" className="text-[#A3A3A3] hover:text-[#A3A3A3] transition">GYIK</Link></li>
+              <li><Link href="/#kapcsolat" className="text-[#A3A3A3] hover:text-[#A3A3A3] transition">Kapcsolat</Link></li>
+              <li><Link href="/adatvedelem" className="text-[#A3A3A3] hover:text-[#A3A3A3] transition">Adatvédelem</Link></li>
+              <li><Link href="/aszf" className="text-[#A3A3A3] hover:text-[#A3A3A3] transition">ÁSZF</Link></li>
             </ul>
           </div>
 
@@ -54,18 +54,18 @@ export default function Footer() {
             <h4 className="font-heading font-bold text-white mb-4">Elérhetőség</h4>
             <ul className="space-y-3 text-sm">
               <li className="flex items-start gap-2 text-[#A3A3A3]">
-                <MapPin className="w-4 h-4 text-[#06B6D4] flex-shrink-0 mt-0.5" />
+                <MapPin className="w-4 h-4 text-[#A3A3A3] flex-shrink-0 mt-0.5" />
                 Körmendi út 45.<br />9700 Szombathely
               </li>
               <li>
-                <a href="tel:+36303899625" className="flex items-center gap-2 text-[#A3A3A3] hover:text-[#06B6D4] transition">
-                  <Phone className="w-4 h-4 text-[#06B6D4]" />
+                <a href="tel:+36303899625" className="flex items-center gap-2 text-[#A3A3A3] hover:text-[#A3A3A3] transition">
+                  <Phone className="w-4 h-4 text-[#A3A3A3]" />
                   +36 30 389 9625
                 </a>
               </li>
               <li>
-                <a href="mailto:dtlcustoms.info@gmail.com" className="flex items-center gap-2 text-[#A3A3A3] hover:text-[#06B6D4] transition break-all">
-                  <Mail className="w-4 h-4 text-[#06B6D4] flex-shrink-0" />
+                <a href="mailto:dtlcustoms.info@gmail.com" className="flex items-center gap-2 text-[#A3A3A3] hover:text-[#A3A3A3] transition break-all">
+                  <Mail className="w-4 h-4 text-[#A3A3A3] flex-shrink-0" />
                   dtlcustoms.info@gmail.com
                 </a>
               </li>
@@ -74,9 +74,9 @@ export default function Footer() {
                   href="https://www.facebook.com/profile.php?id=61587179489147"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="flex items-center gap-2 text-[#A3A3A3] hover:text-[#06B6D4] transition"
+                  className="flex items-center gap-2 text-[#A3A3A3] hover:text-[#A3A3A3] transition"
                 >
-                  <Facebook className="w-4 h-4 text-[#06B6D4]" />
+                  <Facebook className="w-4 h-4 text-[#A3A3A3]" />
                   Facebook
                 </a>
               </li>
