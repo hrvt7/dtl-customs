@@ -4,7 +4,7 @@ import { Phone, Shield, Sun, Sparkles, ArrowRight } from "lucide-react";
 
 export default function Hero() {
   return (
-    <section className="relative overflow-hidden min-h-[560px] sm:min-h-[640px] lg:min-h-[720px] flex items-start lg:items-center">
+    <section className="relative overflow-hidden min-h-[640px] sm:min-h-[720px] lg:min-h-[800px] flex items-start lg:items-center">
       {/* Background videos — separate desktop + mobile elements */}
       <video
         autoPlay
@@ -32,7 +32,7 @@ export default function Hero() {
       <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-black/20 pointer-events-none" />
       <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top_left,rgba(6,182,212,0.18),transparent_55%)] pointer-events-none" />
 
-      <div className="relative w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-8 pb-16 sm:pt-12 sm:pb-20 lg:py-24">
+      <div className="relative w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-28 pb-16 sm:pt-32 sm:pb-20 lg:py-24">
         <div className="max-w-2xl mx-auto lg:mx-0 text-center lg:text-left">
           <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-[#06B6D4]/40 bg-[#06B6D4]/10 backdrop-blur text-[#22D3EE] text-xs font-semibold uppercase tracking-widest mb-5">
             <Sparkles className="w-3.5 h-3.5" />

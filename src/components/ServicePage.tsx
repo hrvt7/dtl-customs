@@ -16,7 +16,7 @@ export interface ServiceContent {
 export default function ServicePage({ content }: { content: ServiceContent }) {
   return (
     <article>
-      <section className="relative overflow-hidden pt-20 pb-20 sm:pt-28 sm:pb-24 border-b border-[#1F1F1F] min-h-[460px]">
+      <section className="relative overflow-hidden pt-28 pb-20 sm:pt-36 sm:pb-24 border-b border-[#1F1F1F] min-h-[460px]">
         {content.heroVideo ? (
           <>
             <video
