@@ -56,23 +56,6 @@ export default function ServicePage({ content }: { content: ServiceContent }) {
             {content.title}
           </h1>
           <p className="mt-4 text-lg text-[#D4D4D4] text-pretty max-w-2xl mx-auto sm:mx-0">{content.hero}</p>
-
-          <div className="mt-8 flex flex-col sm:flex-row gap-3 justify-center sm:justify-start">
-            <a
-              href="tel:+36303899625"
-              className="inline-flex items-center justify-center gap-2 px-6 py-3.5 rounded-full bg-gradient-to-r from-[#E10600] to-[#A30400] text-white font-bold shadow-xl shadow-[#E10600]/20 hover:shadow-2xl transition"
-            >
-              <Phone className="w-5 h-5" />
-              Ajánlatkérés · +36 30 389 9625
-            </a>
-            <Link
-              href="/#kapcsolat"
-              className="inline-flex items-center justify-center gap-2 px-6 py-3.5 rounded-full border border-[#404040] text-white font-semibold hover:border-[#E10600] hover:text-[#E10600] transition"
-            >
-              E-mail küldése
-              <ArrowRight className="w-4 h-4" />
-            </Link>
-          </div>
         </div>
       </section>
 
