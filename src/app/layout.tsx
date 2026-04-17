@@ -1,15 +1,15 @@
 import type { Metadata } from "next";
-import { Oswald, Inter } from "next/font/google";
+import { Outfit, DM_Sans } from "next/font/google";
 import "./globals.css";
 
-const heading = Oswald({
+const heading = Outfit({
   subsets: ["latin", "latin-ext"],
   variable: "--font-heading",
   display: "swap",
-  weight: ["400", "500", "600", "700"],
+  weight: ["400", "500", "600", "700", "800", "900"],
 });
 
-const body = Inter({
+const body = DM_Sans({
   subsets: ["latin", "latin-ext"],
   variable: "--font-body",
   display: "swap",

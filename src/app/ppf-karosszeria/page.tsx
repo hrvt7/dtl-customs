@@ -18,6 +18,7 @@ export default function Page() {
         <ServicePage
           content={{
             slug: "ppf-karosszeria",
+            heroVideo: "/videos/ppf.webm",
             title: "PPF karosszéria-védelem",
             hero: "Paint Protection Film — átlátszó, önjavuló poliuretán fólia, amely láthatatlanul védi autód fényezését kavicsfelverődés, karcok és kémiai hatások ellen.",
             intro:

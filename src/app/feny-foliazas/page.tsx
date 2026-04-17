@@ -18,6 +18,7 @@ export default function Page() {
         <ServicePage
           content={{
             slug: "feny-foliazas",
+            heroVideo: "/videos/feny.webm",
             title: "Fényvédő autóüveg-fóliázás",
             hero: "Prémium fényszűrő ablakfólia UV- és vakításvédelemmel — elegáns megjelenés, kényelmesebb vezetés, tartós minőség.",
             intro:

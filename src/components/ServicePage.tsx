@@ -6,6 +6,7 @@ export interface ServiceContent {
   slug: string;
   title: string;
   hero: string;
+  heroVideo?: string;
   intro: string;
   sections: { h2: string; body: React.ReactNode }[];
   faqs: { q: string; a: string }[];
@@ -15,10 +16,31 @@ export interface ServiceContent {
 export default function ServicePage({ content }: { content: ServiceContent }) {
   return (
     <article>
-      <section className="relative bg-gradient-hero pt-16 pb-16 sm:pt-20 sm:pb-20 border-b border-[#262626]">
-        <div className="absolute inset-0 pointer-events-none opacity-30">
-          <div className="absolute top-0 left-1/3 w-96 h-96 bg-[#E10600] rounded-full mix-blend-screen filter blur-3xl opacity-20" />
-        </div>
+      <section className="relative overflow-hidden pt-20 pb-20 sm:pt-28 sm:pb-24 border-b border-[#262626] min-h-[460px]">
+        {content.heroVideo ? (
+          <>
+            <video
+              autoPlay
+              muted
+              loop
+              playsInline
+              preload="metadata"
+              className="absolute inset-0 w-full h-full object-cover"
+              aria-hidden="true"
+            >
+              <source src={content.heroVideo} type="video/webm" />
+            </video>
+            <div className="absolute inset-0 bg-gradient-to-r from-black/85 via-black/65 to-black/40 pointer-events-none" />
+            <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent pointer-events-none" />
+          </>
+        ) : (
+          <>
+            <div className="absolute inset-0 bg-gradient-hero" />
+            <div className="absolute inset-0 pointer-events-none opacity-30">
+              <div className="absolute top-0 left-1/3 w-96 h-96 bg-[#E10600] rounded-full mix-blend-screen filter blur-3xl opacity-20" />
+            </div>
+          </>
+        )}
         <div className="relative max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <Link
             href="/#szolgaltatasok"
