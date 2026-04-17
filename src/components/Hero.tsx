@@ -33,37 +33,6 @@ export default function Hero() {
       <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top_left,rgba(225,6,0,0.18),transparent_55%)] pointer-events-none" />
 
       <div className="relative w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-8 pb-16 sm:pt-12 sm:pb-20 lg:py-24">
-        {/* Mobile profile card — same design as desktop, shown above title */}
-        <div className="lg:hidden flex justify-center mb-8">
-          <div className="w-[240px]">
-            <div className="relative rounded-3xl overflow-hidden border border-white/10 bg-black/40 backdrop-blur-md shadow-2xl">
-              <div className="relative aspect-[3/4] w-full">
-                <Image
-                  src="/images/profile.webp"
-                  alt="DTL Customs"
-                  fill
-                  sizes="240px"
-                  className="object-cover"
-                  priority
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/85 via-black/10 to-transparent" />
-              </div>
-              <div className="absolute bottom-0 left-0 right-0 p-4">
-                <div className="text-[10px] uppercase tracking-[0.2em] text-[#FF3D3D] font-bold mb-1">DTL Customs · Szombathely</div>
-                <div className="font-heading font-black text-white text-base leading-tight">Prémium autófóliázás</div>
-                <div className="mt-2 inline-flex items-center gap-2 text-[11px] text-white/80">
-                  <span className="w-2 h-2 rounded-full bg-[#E10600] animate-pulse" />
-                  Időpontfoglalás folyamatban
-                </div>
-              </div>
-            </div>
-            <div className="mt-3 text-center bg-[#E10600] text-white rounded-2xl px-5 py-3 font-bold shadow-xl shadow-[#E10600]/25">
-              <div className="text-[10px] uppercase tracking-widest opacity-90">Garancia</div>
-              <div className="text-lg leading-tight">Akár 10 év</div>
-            </div>
-          </div>
-        </div>
-
         <div className="max-w-2xl mx-auto lg:mx-0 text-center lg:text-left">
           <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-[#E10600]/40 bg-[#E10600]/10 backdrop-blur text-[#FF3D3D] text-xs font-semibold uppercase tracking-widest mb-5">
             <Sparkles className="w-3.5 h-3.5" />
@@ -114,6 +83,36 @@ export default function Hero() {
                 </span>
               </div>
             ))}
+          </div>
+
+          {/* Mobile profile card — same design as desktop, below content */}
+          <div className="lg:hidden flex justify-center mt-10">
+            <div className="w-[240px]">
+              <div className="relative rounded-3xl overflow-hidden border border-white/10 bg-black/40 backdrop-blur-md shadow-2xl">
+                <div className="relative aspect-[3/4] w-full">
+                  <Image
+                    src="/images/profile.webp"
+                    alt="DTL Customs"
+                    fill
+                    sizes="240px"
+                    className="object-cover"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/85 via-black/10 to-transparent" />
+                </div>
+                <div className="absolute bottom-0 left-0 right-0 p-4 text-left">
+                  <div className="text-[10px] uppercase tracking-[0.2em] text-[#FF3D3D] font-bold mb-1">DTL Customs · Szombathely</div>
+                  <div className="font-heading font-black text-white text-base leading-tight">Prémium autófóliázás</div>
+                  <div className="mt-2 inline-flex items-center gap-2 text-[11px] text-white/80">
+                    <span className="w-2 h-2 rounded-full bg-[#E10600] animate-pulse" />
+                    Időpontfoglalás folyamatban
+                  </div>
+                </div>
+              </div>
+              <div className="mt-3 text-center bg-[#E10600] text-white rounded-2xl px-5 py-3 font-bold shadow-xl shadow-[#E10600]/25">
+                <div className="text-[10px] uppercase tracking-widest opacity-90">Garancia</div>
+                <div className="text-lg leading-tight">Akár 10 év</div>
+              </div>
+            </div>
           </div>
         </div>
 
